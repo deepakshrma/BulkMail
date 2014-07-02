@@ -2,8 +2,8 @@ BulkMail
 ========
 
 Send bulk mail using nodemailer and async module
-==============
-============
+------------
+
 ### NodeJS  and MongooseJs module for for demonstrating basic nodemailer js using async module, to send bulk mail in parallel.
 
 Requirement
