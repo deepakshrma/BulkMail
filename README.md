@@ -15,8 +15,7 @@ Installation
 I have use async and nodemailer module for sending mail in parallel. For that you have to get async and nodemailer module using npm.
 
 ``` bash
-$ npm install async
-$ npm install nodemailer
+$ npm install 
 ```
 now simply test the application you have simple change the cridentials in the test.js and run the application that you have already downloaded ie.
 test.js using node
@@ -28,76 +27,13 @@ Output
 -------
 
 ``` bash
-{ type: 'parallel',
-  from: 'Fred Foo ✔ <foo@blurdybloop.com>',
-  to: 'sandeep.kumar@intelligrape.com',
-  subject: 'Hello dude/babe sandeep.kumar',
-  text: 'Hello world ✔',
-  html: '<b>Hello world ✔</b>',
-  transport: 
-   { options: 
-      { service: 'Gmail',
-        auth: [Object],
-        maxConnections: 5,
-        transport: 'SMTP',
-        host: 'smtp.gmail.com',
-        secureConnection: true,
-        port: 465,
-        requiresAuth: true,
-        domains: [Object],
-        maxMessages: Infinity },
-     transportType: 'SMTP',
-     dkimOptions: false,
-     transport: { options: [Object], pool: [Object] },
-     version: '0.3.32',
-     sendMail: [Function] } }
-{ type: 'parallel',
-  from: 'Fred Foo ✔ <foo@blurdybloop.com>',
-  to: 'vineeta.sharma@intelligrape.com',
-  subject: 'Hello dude/babe vineeta.sharma',
-  text: 'Hello world ✔',
-  html: '<b>Hello world ✔</b>',
-  transport: 
-   { options: 
-      { service: 'Gmail',
-        auth: [Object],
-        maxConnections: 5,
-        transport: 'SMTP',
-        host: 'smtp.gmail.com',
-        secureConnection: true,
-        port: 465,
-        requiresAuth: true,
-        domains: [Object],
-        maxMessages: Infinity },
-     transportType: 'SMTP',
-     dkimOptions: false,
-     transport: { options: [Object], pool: [Object] },
-     version: '0.3.32',
-     sendMail: [Function] } }
-{ type: 'parallel',
-  from: 'Fred Foo ✔ <foo@blurdybloop.com>',
-  to: 'rakesh.kumar@intelligrape.com',
-  subject: 'Hello dude/babe rakesh.kumar',
-  text: 'Hello world ✔',
-  html: '<b>Hello world ✔</b>',
-  transport: 
-   { options: 
-      { service: 'Gmail',
-        auth: [Object],
-        maxConnections: 5,
-        transport: 'SMTP',
-        host: 'smtp.gmail.com',
-        secureConnection: true,
-        port: 465,
-        requiresAuth: true,
-        domains: [Object],
-        maxMessages: Infinity },
-     transportType: 'SMTP',
-     dkimOptions: false,
-     transport: { options: [Object], pool: [Object] },
-     version: '0.3.32',
-     sendMail: [Function] } }
-
+[ { accepted: 
+     [ 'deepak.vishwakarma@tothenew.com',
+       'vineeta.sharma@tothenew.com' ],
+    rejected: [],
+    response: '250 2.0.0 OK 1449482258 d6sm33360654pfj.82 - gsmtp',
+    envelope: { from: 'deepak.vishwakarma@tothenew.com', to: [Object] },
+    messageId: '1449482256819-053e2ac6-56b91d2a-daefae5b@tothenew.com' } ]
 ```
 
 [NodeJS]: http://nodejs.org

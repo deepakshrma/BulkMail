@@ -1,25 +1,28 @@
 /**
  * Created by intelligrape on 2/7/14.
  */
-var bulkmail = require("./bulkmail")
-var transportinfo = {
-    type: "SMTP",
-    param:{
-        service: "Gmail",
+var BulkMailer = require("./bulkmailer");
+var options = {
+    transport: {
+        service: 'Gmail',
         auth: {
-            user: "deepakm.shrma@gmail.com",
-            pass: "packet@123xx"
-        }
+            user: 'deepak.vishwakarma@tothenew.com',
+            pass: 'xxxxx@xxx'
     }
-}
-var bulk = new bulkmail.SMTP(transportinfo)
-// setup e-mail data with unicode symbols
+    },
+    verbose: true
+};
+var bulkMailer = new BulkMailer(options)
 var mailOptions = {
-    type:"parallel",
-    from: "Fred Foo ✔ <foo@blurdybloop.com>", // sender address
-    to: "sandeep.kumar@intelligrape.com,vineeta.sharma@intelligrape.com,rakesh.kumar@intelligrape.com", // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world ✔", // plaintext body
-    html: "<b>Hello world ✔</b>" // html body
+    from: 'Deepak ✔ <deepak.vishwakarma@tothenew.com>',
+    to: 'deepak.vishwakarma@tothenew.com,vineeta.sharma@tothenew.com',
+    subject: 'hello',
+    text: 'hello world!'
 }
-bulk.sendBulkMail(mailOptions);
+bulkMailer.send(mailOptions, true, function (error, result) { // arg1: mailinfo, agr2: parallel mails, arg3: callback
+    if (error) {
+        console.error(error);
+    } else {
+        console.info(result);
+    }
+});

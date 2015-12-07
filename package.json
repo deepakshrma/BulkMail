@@ -1,0 +1,24 @@
+{
+  "name": "bulkmailer",
+  "version": "1.0.0",
+  "description": "BulkMail ========",
+  "main": "bulkmailer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepakshrma/BulkMail.git"
+  },
+  "author": "deepak.m.shrma@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepakshrma/BulkMail/issues"
+  },
+  "homepage": "https://github.com/deepakshrma/BulkMail#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "nodemailer": "^1.10.0",
+    "nodemailer-smtp-transport": "^1.0.4"
+  }
+}
